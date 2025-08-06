@@ -1,0 +1,57 @@
+:root {
+  --link-color: #333;
+  --link-color-active: #007bff;
+  --title-color: #002244;
+  --border-color: #ddd;
+  --info-color: #d9edf7;
+  --info-color-fg: #002e46;
+  --success-color: #dff2bf;
+  --success-color-fg: #32570a;
+  --error-color: #ffbaba;
+  --error-color-fg: #820007;
+  --background-color: #fffffc;
+}
+
+[data-dark="true"] {
+  --link-color: #f5f5f5;
+  --link-color-active: #007bff;
+  --title-color: #f5f5f5;
+  --border-color: #2e2e2e;
+  --info-color: #002e46;
+  --info-color-fg: #d9edf7;
+  --success-color: #102000;
+  --success-color-fg: #dff2bf;
+  --error-color: #2f0002;
+  --error-color-fg: #ffbaba;
+  --background-color: #1d1d1d;
+}
+
+.text-color {
+  color: var(--link-color);
+}
+
+.link {
+  color: var(--link-color);
+  font-size: 1rem;
+  height: max-content;
+  text-decoration: none;
+}
+
+.link-login {
+  color: var(--link-color-active);
+  text-decoration: underline;
+  text-decoration-color: var(--link-color-active);
+  text-underline-offset: 2px;
+}
+
+.link.active {
+  color: var(--link-color-active);
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: var(--link-color-active);
+  text-underline-offset: 2px;
+}
+
+.link-drawer {
+  padding: 1rem 10px;
+}
